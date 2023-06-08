@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "github": "tsc && vite build --config ./vite.github.js",
     "preview": "vite preview"
   },
   "devDependencies": {
