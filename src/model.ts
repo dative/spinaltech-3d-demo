@@ -23,7 +23,7 @@ braceEl?.addEventListener('load', () => {
       // 938D84
       if (patternUri === '') {
         const texture = await braceEl.createTexture(
-          '/assets/Textures/Busto injoinato texturizzare_3_BaseColor.png'
+          './assets/Textures/Busto injoinato texturizzare_3_BaseColor.png'
         );
         bodyMaterial.pbrMetallicRoughness['baseColorTexture'].setTexture(
           texture
