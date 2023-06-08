@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <model-viewer
+        id="brace"
+        src="/assets/gltf/Busto.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        poster="/assets/gltf/Busto.png"
+        shadow-intensity="1"
+        camera-orbit="0deg 75deg 2.38m"
+        field-of-view="30deg"
+        alt="A 3D model of a brace"
+      >
+        <div>
+          <p>Patterns</p>
+          <select id="patterns">
+            <option value="">Select a pattern</option>
+            <option value="/patterns/carbon.jpg">Carbon</option>
+            <option value="/patterns/skulls.jpg">Skulls</option>
+          </select>
+        </div>
+      </model-viewer>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
