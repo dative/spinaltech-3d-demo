@@ -7,6 +7,14 @@
     <title>SpinalTech Brace 3d Demo</title>
   </head>
   <body>
+    <div>
+      <p>Patterns</p>
+      <select id="patterns">
+        <option value="">Select a pattern</option>
+        <option value="./patterns/carbon.jpg">Carbon</option>
+        <option value="./patterns/skulls.jpg">Skulls</option>
+      </select>
+    </div>
     <div class="container">
       <model-viewer
         id="brace"
@@ -17,14 +25,6 @@
         src="./assets/gltf/brace.glb"
         alt="A 3D model of a brace"
       >
-        <div>
-          <p>Patterns</p>
-          <select id="patterns">
-            <option value="">Select a pattern</option>
-            <option value="./patterns/carbon.jpg">Carbon</option>
-            <option value="./patterns/skulls.jpg">Skulls</option>
-          </select>
-        </div>
       </model-viewer>
     </div>
     <div id="app"></div>
