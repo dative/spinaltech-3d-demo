@@ -32,6 +32,9 @@ const getCanvasTexture = (image: string) => {
 
 braceEl?.addEventListener('load', () => {
   if (braceEl?.model) {
+    const variants = braceEl.availableVariants;
+    console.log(variants);
+
     const bodyMaterial = braceEl.model.materials[0];
     bodyMaterial.pbrMetallicRoughness.setBaseColorFactor('#FFFFFF');
 
