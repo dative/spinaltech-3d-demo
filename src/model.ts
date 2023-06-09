@@ -46,11 +46,11 @@ braceEl?.addEventListener('load', () => {
         return;
       }
 
-      // const texture = await braceEl.createTexture(patternUri, 'image/jpeg');
+      const texture = await braceEl.createTexture(patternUri, 'image/jpeg');
 
       // Using a canvas texture instead of an image texture so we can set the
       // pattern to repeat at a larger scale.
-      const texture = getCanvasTexture(patternUri);
+      // const texture = getCanvasTexture(patternUri);
       bodyMaterial.pbrMetallicRoughness['baseColorTexture'].setTexture(texture);
 
       // Controls shine and roughness of the material
@@ -58,7 +58,7 @@ braceEl?.addEventListener('load', () => {
       bodyMaterial.pbrMetallicRoughness.setRoughnessFactor(0.25);
     };
 
-    createAndApplyTexture('./patterns/TP_Lily_Rose_NL_2000x2000.jpg');
+    createAndApplyTexture('./patterns/butterflysquare.jpg');
 
     const patternSelect = document?.querySelector(
       '#patterns'
