@@ -7,23 +7,54 @@
     <title>SpinalTech Brace 3d Demo</title>
   </head>
   <body>
-    <div>
+    <div id="controls">
       <p>Patterns</p>
       <select id="patterns">
-        <option value="">Select a pattern</option>
-        <option value="./patterns/carbon.jpg">Carbon</option>
-        <option value="./patterns/skulls.jpg">Skulls</option>
+        <option value="./patterns/TP_Lily_Rose_NL_2000x2000.jpg">
+          Lily Rose
+        </option>
+        <option value="./patterns/TP_BearArms_D_2000x2000.jpg">
+          Bear Arms
+        </option>
+        <option value="./patterns/TP_Black_Carbon_Weave_NL_2000x2000.jpg">
+          Black Carbon Weave
+        </option>
+
+        <option value="./patterns/TP_Mahi_NL_2000x2000.jpg">Mahi</option>
+        <option value="./patterns/TP_Maroon_Lace_NL_2000x2000.jpg">
+          Maroon Lace
+        </option>
+        <option value="./patterns/TP_Mermaids_NL_2000x2000.jpg">
+          Mermaids
+        </option>
+        <option value="./patterns/TP_Seashells_NL_2000x2000.jpg">
+          Seashells
+        </option>
+        <option value="./patterns/TP_Sharks_NL_2000x2000.jpg">Sharks</option>
+        <option value="./patterns/TP_Spirit_Camo_Pink_Ribbon_NL_2000x2000.jpg">
+          Pink Ribbon Camo
+        </option>
+        <option value="./patterns/TP_Tie_Dye_NL_2000x2000.jpg">Tie Dye</option>
+        <option value="./patterns/TP-Marsh_D_2000x2000.jpg">Marsh</option>
       </select>
     </div>
     <div class="container">
       <model-viewer
         id="brace"
         ar
+        ar-modes="webxr scene-viewer quick-look"
         camera-controls
+        shadow-intensity="1"
         touch-action="pan-y"
         xr-environment
+        orientation="0 0 180deg"
+        interaction-prompt="none"
+        auto-rotate
+        auto-rotate-delay="250"
         src="./assets/gltf/brace.glb"
+        poster="./assets/gltf/poster.png"
         alt="A 3D model of a brace"
+        scale="0.5 0.5 0.5"
       >
       </model-viewer>
     </div>
