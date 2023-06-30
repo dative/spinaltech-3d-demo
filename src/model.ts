@@ -32,8 +32,7 @@ const getCanvasTexture = (image: string) => {
 
 braceEl?.addEventListener('load', () => {
   if (braceEl?.model) {
-    const bodyMaterial = braceEl.model.materials[0];
-    bodyMaterial.pbrMetallicRoughness.setBaseColorFactor('#FFFFFF');
+    const bodyMaterial = braceEl.model.materials[1];
 
     const createAndApplyTexture = async (patternUri: string) => {
       if (patternUri === '') {
@@ -54,8 +53,8 @@ braceEl?.addEventListener('load', () => {
       bodyMaterial.pbrMetallicRoughness['baseColorTexture'].setTexture(texture);
 
       // Controls shine and roughness of the material
-      bodyMaterial.pbrMetallicRoughness.setMetallicFactor(0.5);
-      bodyMaterial.pbrMetallicRoughness.setRoughnessFactor(0.25);
+      // bodyMaterial.pbrMetallicRoughness.setMetallicFactor(0.5);
+      // bodyMaterial.pbrMetallicRoughness.setRoughnessFactor(0.25);
     };
 
     createAndApplyTexture('./patterns/butterflysquare.jpg');
