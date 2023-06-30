@@ -15,3 +15,11 @@ This repository contains the code for the Spinal Tech 3D Brace Experiment. The e
 
 I had to create a `<canvas>` dynamically in order to make the patterns repeatable
 and resizeable.
+
+## Requirements
+
+- [ ] Decide which brace will be the model
+- [ ] Multiple picture angles of that brace with a pattern
+- [ ] STL file for selected brace
+- [ ] JPE of the pattern
+- [ ] Create a proof of concept that will allow us to create the UI for the website
